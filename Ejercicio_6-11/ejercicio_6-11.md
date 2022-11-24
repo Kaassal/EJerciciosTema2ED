@@ -32,3 +32,27 @@ Antes de poder instalar los paquetes es recomendable ejecutar el siguiente coman
 Luego instalamos los paquetes usando :
 
     sudo apt-get install python3.6  php  nodejs  gcc  g++  openjdk-8-jdk  ruby  golang  rustc  clisp nasm
+    
+## Bash 
+Como la terminal de linux ya utliza bash no tenemos que instalar nada más para que poder interpretar Bash.
+Podemos ejecutar el siguiente comando para comprobarlo:
+
+    echo "Hola mundo"
+### Ejecutar "Hola mundo" en Bash 
+1. Creamos un archivo *.sh* donde escribiremos el codigo de *Hola Mundo*
+	
+
+   `cat > HolaMundo.sh`
+   
+2. Escribimos, dentro de el archivo *HolaMundo.sh* el codigo.
+    
+    `ehco "Hola mundo"`
+    
+    >Para salir y guardar nuestro codigo pusamos Ctrl+D
+
+3. Damos permisos de ejecucion al procrama usando:
+`chmod +x HolaMundo.sh`
+
+4. Ejecutamos el archivo
+
+    `./HolaMundo.sh`

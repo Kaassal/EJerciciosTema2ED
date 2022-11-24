@@ -32,7 +32,6 @@ Antes de poder instalar los paquetes es recomendable ejecutar el siguiente coman
 Luego instalamos los paquetes usando :
 
     sudo apt-get install python3.6  php  nodejs  gcc  g++  openjdk-8-jdk  ruby  golang  rustc  clisp nasm
-    
 ## Bash 
 Como la terminal de linux ya utliza bash no tenemos que instalar nada más para que poder interpretar Bash.
 Podemos ejecutar el siguiente comando para comprobarlo:
@@ -41,18 +40,63 @@ Podemos ejecutar el siguiente comando para comprobarlo:
 ### Ejecutar "Hola mundo" en Bash 
 1. Creamos un archivo *.sh* donde escribiremos el codigo de *Hola Mundo*
 	
+~~~
+   cat > HolaMundo.sh
+~~~
 
-   `cat > HolaMundo.sh`
+
    
 2. Escribimos, dentro de el archivo *HolaMundo.sh* el codigo.
     
-    `ehco "Hola mundo"`
+    ~~~~
+    echo "Hola Mundo"
+    ~~~~
     
     >Para salir y guardar nuestro codigo pusamos Ctrl+D
 
 3. Damos permisos de ejecucion al procrama usando:
-`chmod +x HolaMundo.sh`
-
+~~~~
+chmod +x HolaMundo.sh
+~~~~
 4. Ejecutamos el archivo
+~~~~
+    ./HolaMundo.sh
+~~~~
+## Python
+Hola mundo en python
+Python es un lenguaje **interpretado**, por lo tanto podemos abrir su interprete en la terminal para probar hola mundo:
+~~~~
+python3
+~~~~
+Escribimos el programa para probarlo 
+~~~~
+print ("Hola mundo")
+~~~~
+>Pulsa Ctrl+D para salir del interprete
+   
+### Python Script ejecutable
 
-    `./HolaMundo.sh`
+   1. Creamos un archivo *.py* donde escribiremos el codigo de *Hola Mundo*
+	
+~~~
+   cat > HolaMundo.py
+~~~
+
+
+   
+2. Escribimos, dentro de el archivo *HolaMundo.py* el codigo.
+    
+    ~~~~
+    print ("Hola Mundo")
+    ~~~~
+    
+    >Para salir y guardar nuestro codigo pusamos Ctrl+D
+
+3. Damos permisos de ejecucion al procrama usando:
+~~~~
+chmod +x HolaMundo.py
+~~~~
+4. Ejecutamos el archivo
+~~~~
+    ./HolaMundo.py
+

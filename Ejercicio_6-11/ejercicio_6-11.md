@@ -200,8 +200,39 @@ return 0;
 gcc -o HolaMundo HolaMundo.c
 
 ~~~~
-3.  Abrimos el intérprete y ejecutamos el programa:
+3.  Ejecutamos el programa:
 
 ~~~~
 ./Holamundo
+~~~~
+# C++
+
+_"Hola Mundo"_  en C++.
+
+Ejecutar el programa
+
+1.  Creamos un archivo de texto llamado  **HolaMundo.cpp**  y escribimos el código:
+
+~~~~
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   cout << "Hola mundo" << endl;
+   return 0;
+}
+
+~~~~
+2.  Compilamos y enlazamos:
+
+~~~~
+g++ -o HolaMundo HolaMundo.c
+
+~~~~
+3.  Ejecutamos el programa:
+
+~~~~
+./HolaMundo
 ~~~~

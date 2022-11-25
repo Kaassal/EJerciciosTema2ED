@@ -228,7 +228,7 @@ int main()
 2.  Compilamos y enlazamos:
 
 ~~~~
-g++ -o HolaMundo HolaMundo.c
+g++ -o HolaMundo HolaMundo.cpp
 
 ~~~~
 3.  Ejecutamos el programa:
@@ -236,3 +236,233 @@ g++ -o HolaMundo HolaMundo.c
 ~~~~
 ./HolaMundo
 ~~~~
+## Java
+
+### Pasos
+
+1. Editamos archivo __Hola.java__
+
+```
+class HolaMundo
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Hola Mundo");
+    }
+}
+```
+
+2. Compilamos
+
+```
+javac  HolaMundo.java      
+```
+
+3. Interpretamos y ejecutamos
+
+```
+java  HolaMundo            
+```
+### _Script ejecutable_
+
+> Realmente no es un script, sino __bytecode empaquetado en JAR__ e interpretado por la JVM (Java Virtual Machine).
+
+1. Empaquetamos
+
+```
+jar  cvfe  HolaMundo.jar  HolaMundo  HolaMundo.class  
+```
+2. Damos permiso de ejecución
+
+```
+chmod  +x  HolaMundo.jar                    
+```
+
+3. Ejecutamos
+
+```
+./HolaMundo.jar 
+```
+## Ensamblador (nasm)
+
+### Pasos
+
+1. Editamos archivo __HolaMundo.asm__
+
+```
+ section .data
+ 
+ msg     db "Hola Mundo", 0Ah
+ len     equ     $ - msg  
+ 
+ section .text
+ 
+ global _start
+ 
+ _start:
+        mov     eax, 04h
+        mov     ebx, 01h
+        mov     ecx, msg
+        mov     edx, len
+        int     80h
+        mov     eax, 01h
+        mov     ebx, 00h
+        int     80h
+```
+
+2. Ensamblamos y enlazamos
+
+```
+nasm  -f  elf64  HolaMundo.asm       
+ld  HolaMundo.o  -o  HolaMundo            
+```
+
+3. Ejecutamos
+
+```
+./HolaMundo
+```
+## Ruby
+
+### Pasos
+Hola mundo en Javascript
+Como Javascript es un lenguaje interpetado podemos usar el interprete para probar "Hola mundo" de la siguiente manera:
+
+1. Ejecutamos el intérprete.  
+
+```
+ruby
+```
+
+2. Escribimos el codigo.
+
+```
+puts "Hola Mundo"
+```
+
+> Para salir del intérprete pulsamos CTRL+D.  
+
+
+### Script ejecutable
+
+1. Editamos archivo __HolaMundo.rb__
+
+```
+#!/usr/bin/env ruby
+
+puts "Hola Mundo"
+```
+
+
+2. Damos permisos de ejecución
+
+```
+chmod  +x  hola.rb
+```
+
+3. Ejecutamos
+
+```bash
+./hola.rb
+```
+## Go
+
+### Pasos
+
+1. Editamos archivo __HolaMundo.go__ 
+
+```
+package main
+
+import "fmt"
+
+func main() {
+        fmt.Println("Hola mundo")
+}
+```
+
+2. Compilamos y enlazamos
+
+```
+go  build  HolaMundo.go   
+```
+
+3. Ejecutamos
+
+```
+./ HolaMundo
+```
+
+4. En Go se puede interpretar codigo de la siguiente forma:
+
+```
+go  run  HolaMundo.go     
+```
+
+
+## Rust
+
+### Pasos
+
+1. Editamos archivo  __HolaMundo.rs__
+
+```
+fn main() {
+    println!("¡Hola, mundo! Desde RUST ");
+}
+```
+
+2. Compilamos y enlazamos
+
+```
+rustc  HolaMundo.rs
+```
+
+3. Ejecutamos
+
+```
+./HolaMundo
+```
+
+## Lisp
+
+### Pasos
+Lisp puede ser tanto interpretado como compilado, si quisieramos compilarlo lo haríamos de la siguiente manera
+
+1. Ejecutamos el intérprete.  
+
+```
+clisp
+```
+
+2. Escribimos las sentencias y luego pulsamos INTRO.
+
+```
+(format t "¡Hola, mundo!")
+```
+
+>Para salir del intérprete pulsamos CTRL+D.  
+
+
+### Script ejecutable
+
+1. Editamos archivo __HolaMundo.lisp__
+
+```
+#!/usr/bin/env clisp
+
+(format t "¡Hola, mundo!")
+```
+
+
+2. Damos permisos de ejecución
+
+```
+chmod  +x  hola.lisp
+```
+
+3. Ejecutamos
+
+```
+./HolaMundo.lisp
+```

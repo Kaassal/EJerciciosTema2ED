@@ -96,7 +96,50 @@ print ("Hola mundo")
 ~~~~
 chmod +x HolaMundo.py
 ~~~~
-4. Ejecutamos el archivo
+4. Abrimos el interpre te y ejecutamos el archivo
 ~~~~
     ./HolaMundo.py
+~~~~
 
+
+## PHP
+
+_"Hola Mundo en PHP"_  
+Al igua que Python **PHP** es un **lenguaje interpretado**. Entonces podemos abrir el interprete y probar "Hola mundo". Para abrir el interprete usamos:
+
+~~~~
+php -a
+
+~~~~
+
+Para probar el programa escribimos:
+
+~~~~
+echo "Hola Mundo";
+
+~~~~
+>Pulsa CTRL + D para salir del intérprete.
+
+### PHP Script ejecutable
+
+1.  Creamos un archivo de texto llamado  **HolaMundo.php**  donde escribriemos el codigo de "Hola Mundo"
+~~~~
+cat > Holamundo.php
+~~~~
+2.  Escribimos el código:
+~~~~
+<?php 
+  echo "Hola mundo"; 
+?>
+~~~~
+
+3.  Le damos permisos de ejecucion al programa:
+~~~~
+chmod +x HolaMundo.php
+~~~~
+
+4  Abrimos el intérprete y ejecutamos el programa:
+
+~~~~
+php ./Holamundo.php
+~~~~

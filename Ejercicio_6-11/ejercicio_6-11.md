@@ -240,7 +240,7 @@ g++ -o HolaMundo HolaMundo.cpp
 
 ### Pasos
 
-1. Editamos archivo __Hola.java__
+1. Editamos archivo __HolaMundo.java__
 
 ```
 class HolaMundo
@@ -325,8 +325,8 @@ ld  HolaMundo.o  -o  HolaMundo
 ## Ruby
 
 ### Pasos
-Hola mundo en Javascript
-Como Javascript es un lenguaje interpetado podemos usar el interprete para probar "Hola mundo" de la siguiente manera:
+Hola mundo en Ruby
+Como Ruby es un lenguaje interpetado podemos usar el interprete para probar "Hola mundo" de la siguiente manera:
 
 1. Ejecutamos el intérprete.  
 

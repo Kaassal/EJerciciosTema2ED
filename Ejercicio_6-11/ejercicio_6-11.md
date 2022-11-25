@@ -163,17 +163,45 @@ console.log('Hola mundo');
 ### Nodejs Script ejecutable
 1. Creamos un archivo de texto llamado  **HolaMundo.js**  donde escribriemos el codigo de "Hola Mundo"
 
-1.  Escribimos el codigo en el archivo   **HolaMundo.js**
+2. Escribimos el codigo en el archivo   **HolaMundo.js**
 ~~~~
 #!/usr/bin/env node
 
 console.log('Hola mundo');
 ~~~~
-2.  Le damos permisos de ejecución a programa usando:
+3.  Le damos permisos de ejecución a programa usando:
 ~~~~
-chmod  +x  hola.js
+chmod  +x  HolaMundo.js
 ~~~~
-3.  Abrimos el interprete y ejecutamos el programa
+4.  Abrimos el interprete y ejecutamos el programa
 ~~~~
-./hola.js
+node ./HolaMundo.js
+~~~~
+# C
+
+_"Hola Mundo"_  en C.
+
+Ejecutar el programa
+
+1.  Creamos un archivo de texto llamado  **HolaMundo.c**  y escribimos el código:
+
+~~~~
+#include <stdio.h>
+int main
+{
+printf("Hola Mundo");
+return 0;
+}
+
+~~~~
+2.  Compilamos y enlazamos:
+
+~~~~
+gcc -o HolaMundo HolaMundo.c
+
+~~~~
+3.  Abrimos el intérprete y ejecutamos el programa:
+
+~~~~
+./Holamundo
 ~~~~

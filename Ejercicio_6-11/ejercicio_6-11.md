@@ -55,6 +55,7 @@ Podemos ejecutar el siguiente comando para comprobarlo:
     >Para salir y guardar nuestro codigo pusamos Ctrl+D
 
 3. Damos permisos de ejecucion al procrama usando:
+
 ~~~~
 chmod +x HolaMundo.sh
 ~~~~
@@ -63,7 +64,8 @@ chmod +x HolaMundo.sh
     ./HolaMundo.sh
 ~~~~
 ## Python
-Hola mundo en python
+Hola mundo en python.
+
 Python es un lenguaje **interpretado**, por lo tanto podemos abrir su interprete en la terminal para probar hola mundo:
 ~~~~
 python3
@@ -142,4 +144,36 @@ chmod +x HolaMundo.php
 
 ~~~~
 php ./Holamundo.php
+~~~~
+## Javascript (nodejs)
+
+Hola mundo en Javascript
+Como Javascript es un lenguaje interpetado podemos usar el interprete para probar "Hola mundo" de la siguiente manera:
+
+1.  Ejecutamos el intérprete.
+
+node
+
+2.  Escribimos el codgio.
+
+console.log('Hola mundo');
+
+> Para salir del intérprete pulsamos CTRL+D.
+
+### Nodejs Script ejecutable
+1. Creamos un archivo de texto llamado  **HolaMundo.js**  donde escribriemos el codigo de "Hola Mundo"
+
+1.  Escribimos el codigo en el archivo   **HolaMundo.js**
+~~~~
+#!/usr/bin/env node
+
+console.log('Hola mundo');
+~~~~
+2.  Le damos permisos de ejecución a programa usando:
+~~~~
+chmod  +x  hola.js
+~~~~
+3.  Abrimos el interprete y ejecutamos el programa
+~~~~
+./hola.js
 ~~~~

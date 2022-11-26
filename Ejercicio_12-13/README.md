@@ -46,12 +46,12 @@ gcc -c main.c suma.c datos.c
 ## Lenguaje C. Código en varios archivos. Obtener el código binario ejecutable a partir del código objeto de los 3 archivos anteriores:
 Para obtener el codigo ejecutable apartir del codigo objeto usamos:
 ~~~~
-gcc -o program main.o datos.o suma.o
+gcc -o programa main.o datos.o suma.o
 ~~~~
 
 ## Deberemos obtener un archivo programa binario ejecutable. Si lo ejecutamos obtenemos el siguiente resultado:
 ~~~~
-./program
+./programa
 ~~~~
 ~~~~
 Hola a todos y todas
@@ -61,3 +61,4 @@ Hola a todos y todas
 > Nota: Obtenemos el "Hola a todos y todas porque está declarado en datos.
 
 > Nota: Obtenemos el 18 porque en datos se declara que **num1**=8 y **num2**=10 y en suma que es una funcion que dice que **a** y **b** se suman y en el main se llama a la funcion suma y se declara que **a** es **num1** y **b** es **num2** lo esto da 18 como resultado.
+
